@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f5f0e6;
+  --color-card: #fbf8f2;
+  --color-ink: #17171c;
+  --color-muted: #625d56;
+  --color-line: #d9d1c3;
+  --color-action: #c73d18;
+  --color-action-dark: #a8320f;
+  --color-win: #1e6b47;
+  --color-win-soft: #e3eee6;
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-plex);
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Filet pointillé façon ticket de caisse */
+.rule-dashed {
+  border-top: 1.5px dashed var(--color-line);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-action);
+  outline-offset: 2px;
+}
